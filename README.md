@@ -37,7 +37,7 @@ That's it. You will have a server running on `localhost:3000` that serves the JS
 #### API Endpoints
 
 The API endpoint we need to retrieve all the beers is a conventional RESTful route
-* **Route:** GET `http://localhost:3000/beers`
+* **Route:** GET `http://localhost:4000/beers`
 
 To update a beer you'll need to make a PATCH request
 * **Route:** PATCH `http://localhost:3000/beers/:id`
