@@ -23,6 +23,7 @@ function putNamesOnDOM(data) {
 
     li.addEventListener('click',function(e) {
       console.log(data[i]);
+      beerDetail.innerHTML = ''
       let beerName = document.createElement('h1')
       let picture = document.createElement('img')
       let beerTag = document.createElement('h3')
@@ -32,8 +33,6 @@ function putNamesOnDOM(data) {
       createButton.setAttribute('class','btn btn-info')
       // console.log(createButton)
       createButton.innerHTML = 'save'
-
-
 
       beerName.setAttribute('id', 'beerTitle')
       // console.log(beerTag);
@@ -48,6 +47,12 @@ function putNamesOnDOM(data) {
       picture.src = data[i].image_url
       beerName.innerHTML = data[i].name
       // beerDetail.removeChild(previous)
+      // beerDetail.innerHTML = beerName.innerHTML
+      // beerDetail.innerHTML = picture.innerHTML
+      // beerDetail.innerHTML = beerTag.innerHTML
+      // beerDetail.innerHTML = beerDesc.innerHTML
+      // console.log(beerName);
+      beerDetail.appendChild(createButton)
       beerDetail.appendChild(beerName)
       beerDetail.appendChild(picture)
       beerDetail.appendChild(beerTag)
